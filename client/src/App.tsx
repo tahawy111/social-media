@@ -1,20 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { BrowserRouter } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import { useState } from 'react';
+
+import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Signin from './pages/Signin';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className='font-mono'>
-    <BrowserRouter>
-      <Navbar/>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/signin' element={<Signin />} />
+        </Routes>
+      </BrowserRouter>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

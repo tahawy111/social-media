@@ -11,5 +11,5 @@ export default {
   daisyui: {
     themes: ["emerald", "dark"],
   },
-  darkMode:"class",
+  darkMode: ['class', '[data-theme="dark"]'],
 }
