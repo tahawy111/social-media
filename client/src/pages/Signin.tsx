@@ -1,9 +1,14 @@
+import { Helmet } from "react-helmet-async";
 import Layout from "../components/Layout";
 
 export default function Signin() {
     return (
 
         <Layout>
+            <Helmet>
+                <title>V-NETWORK - Siginin</title>
+                <meta name="description" content="signin page for social media website 'V-NETWORK'" />
+            </Helmet>
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
